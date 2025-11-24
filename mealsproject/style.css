@@ -1,34 +1,19 @@
 body {
-  background: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
 }
+
 .navbar {
-  background: orangered;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 11px 17px; 
-  justify-content: space-between;
+    background: #ef6c1f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
 }
-.brand {
-  font-weight: bold;
-  font-size: 19px; 
-}
-.menu-icon {
-  font-size: 40px; 
-  cursor: pointer;
-}
-.hero {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  padding: 56px 0 32px; 
-  color: white;
-  position: relative;
-  text-align: center;
-}
-.hero-title {
-  font-size: 33.6px; 
-  font-weight: bold;
-  margin-top: 19.2px; 
-  text-shadow: 1px 1px 4px darkred;
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
 }

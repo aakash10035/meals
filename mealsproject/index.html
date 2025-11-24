@@ -2,48 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="brand">🏠 MEAL FINDER</div>
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-  </nav>
-  <!-- Hero / Search -->
-  <section class="hero" style="background-image: url('localhost_3000_-4.jpg');">
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search recipes here ...">
-      <button onclick="searchMeals()"><span>&#128269;</span></button>
+    <nav class="navbar">
+        <span class="logo"><i class="fa fa-home"></i> MEAL FINDER</span>
+        <span class="menu">
+            <i class="fa fa-bars" id="hamburger"></i>
+        </span>
+    </nav>
+    <aside class="sidebar" id="sidebar">
+        <span id="closeSidebar">&times;</span>
+        <ul id="categoryList"></ul>
+    </aside>
+    <div class="banner">
+        <input type="text" id="searchInput" placeholder="Search recipes here ...">
+        <button id="searchBtn"><i class="fa fa-search"></i></button>
+        <h1>What are your favorite cuisines?</h1>
+        <p>PERSONALIZE YOUR EXPERIENCE</p>
     </div>
-    <h2 class="hero-title">What are your favorite cuisines?</h2>
-    <div class="subtitle">PERSONALIZE YOUR EXPERIENCE</div>
-  </section>
-  <!-- side drawer -->
-  <div id="sideDrawer" class="drawer">
-    <span class="closebtn" onclick="toggleMenu()">&times;</span>
-    <ul>
-      <li>Beef</li>
-      <li>Chicken</li>
-      <li>Dessert</li>
-      <li>Lamb</li>
-      <li>Miscellaneous</li>
-      <li>Pasta</li>
-      <li>Pork</li>
-      <li>Seafood</li>
-      <li>Side</li>
-      <li>Starter</li>
-      <li>Vegan</li>
-      <li>Vegetarian</li>
-      <li>Breakfast</li>
-      <li>Goat</li>
-    </ul>
-  </div>
-  <script src="./script.js"></script>
+    <section>
+        <h2>CATEGORIES</h2>
+        <div id="categoriesGrid"></div>
+    </section>
+    <main id="mainContent"></main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
